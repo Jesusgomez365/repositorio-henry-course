@@ -1,0 +1,16 @@
+title: Repositorio Henry
+description: Prueba
+template:
+  repo: repositorio-henry-template
+  name: repositorio-henry
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
